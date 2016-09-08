@@ -1,0 +1,5 @@
+# CustomTemplate
+Xcode 自定义模板 UITabBarController和UINavigationController
+Xcode没有内置基于标签栏和导航栏的Xcode模板，我们在创建工程时往往是需要标签栏和导航栏的，只能自己创建，这样多少有些耗费时间，
+该模板可以直接创建基于标签栏和导航栏的工程。
+内含pch文件，简单配置即可
