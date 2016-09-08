@@ -1,0 +1,31 @@
+//
+//  ___FILENAME___
+//  ___PROJECTNAME___
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
+//
+// The contents of this file are implicitly
+// included at the beginning of every source file
+// https://techfuzionwithsam.wordpress.com/2014/11/29/how-to-add-pch-or-prefix-pch-file-in-xcode-6/
+
+/* # How to add .pch file #
+ 1.) Goto Project > Build Settings > Search for “Prefix Header“
+ 2.) Under “Apple LLVM 7.x” you will get the Prefix Header key.
+ 3.) Type in: ___PROJECTNAME___/___FILENAME___ or $(SRCROOT)/___FILENAME___
+ 4.) Clean and build your project.
+ */
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppGlobalMacro.h"
+
+#endif
