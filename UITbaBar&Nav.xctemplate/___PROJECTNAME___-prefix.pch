@@ -12,7 +12,7 @@
 /* # How to add .pch file #
  1.) Goto Project > Build Settings > Search for “Prefix Header“
  2.) Under “Apple LLVM 7.x” you will get the Prefix Header key.
- 3.) Type in: ___PROJECTNAME___/___FILENAME___ or $(SRCROOT)/___FILENAME___
+ 3.) Type in: ___PROJECTNAME___/___FILENAME___ or $(SRCROOT)/___PROJECTNAME___/___FILENAME___
  4.) Clean and build your project.
  */
 
